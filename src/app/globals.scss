@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+
+:root{
+  --red:#E40038;
+  --beige:#F8F5E1;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background:var(--beige);
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mainHero{
+  width: 100vw;
+  height: 100vh;
+  color: var(--red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  position: relative;
+  button{
+    background: none;
+    border: none;
+    color: var(--red);
+    font-weight: bold;
+    padding: 0;
+    font-size: 1rem;
+    cursor: pointer;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.name {
+  span{
+    display: block;
+    line-height: .8;
+    &:nth-child(1){
+      font-size: 7rem;
+      font-weight: bolder;
+    }
+    &:nth-child(2){
+      font-size: 5.6rem;
+      font-weight: bold;
+    }
+  }
+}
+
+.charge{
+  width: 100%;
+  background: var(--red);
+  color: var(--beige);
+  margin:12px 0;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.folio{
+  top: 2%;
+  left: 5%;
+  position: absolute;
+  font-size: .9rem;
+  font-weight: bolder;
+}
+.lang{
+  top: 2%;
+  right: 5%;
+  position: absolute;
+  font-size: .9rem;
+  font-weight: bolder;
+}
